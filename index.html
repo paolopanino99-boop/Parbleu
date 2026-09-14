@@ -9,7 +9,6 @@
     <style>
         body {
             font-family: 'Courier Prime', monospace;
-            /* Sfondo geometrico retrò con pattern ingrandito per una maggiore pulizia visiva */
             background-color: #0b2d24; /* Verde foresta scuro della palette */
             background-image: 
                 linear-gradient(30deg, #184e3e 12%, transparent 12.5%, transparent 87%, #184e3e 87.5%, #184e3e),
@@ -17,7 +16,7 @@
                 linear-gradient(30deg, #184e3e 12%, transparent 12.5%, transparent 87%, #184e3e 87.5%, #184e3e),
                 linear-gradient(150deg, #184e3e 12%, transparent 12.5%, transparent 87%, #184e3e 87.5%, #184e3e),
                 linear-gradient(60deg, #94a399 25%, transparent 25.5%, transparent 75%, #94a399 75%, #94a399);
-            background-size: 80px 140px; /* Dimensioni raddoppiate per alleggerire lo sfondo */
+            background-size: 80px 140px;
             background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
             color: #111111;
             overflow-x: hidden;
@@ -46,11 +45,9 @@
             <h1 class="font-parbleu-title text-4xl md:text-5xl tracking-widest uppercase font-bold text-white">PARBLEU</h1>
             <span class="font-parbleu-hand text-3xl md:text-4xl text-[#d1d5db] lowercase tracking-wider block -mt-2">cafè</span>
         </div>
-
-        <h2 id="main-subtitle" class="font-parbleu-hand text-3xl md:text-4xl text-[#d1d5db] font-bold tracking-wide mt-2 drop-shadow-md">La carta dei vini</h2>
         
-        <div class="flex justify-center mt-4">
-            <div class="inline-flex bg-[#d1d5db] p-1 rounded-none border-2 border-black shadow-[3px_3px_0px_#111]">
+        <div class="flex justify-center mt-2">
+            <div class="inline-flex bg-white p-1 rounded-none border-2 border-black shadow-[3px_3px_0px_#111]">
                 <button onclick="switchView('carta')" id="tab-carta" class="px-5 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer bg-black text-white">
                     🍷 Carta dei Vini
                 </button>
@@ -61,7 +58,7 @@
         </div>
 
         <div class="flex justify-center items-center mt-3">
-            <a href="https://www.instagram.com/viticolturaerotica/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-[#d1d5db] hover:text-white font-bold tracking-wide transition active:scale-95 drop-shadow-sm">
+            <a href="https://www.instagram.com/viticolturaerotica/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-[#facc15] hover:text-white font-bold tracking-wide transition active:scale-95 drop-shadow-sm">
                 <span>powered by viticolturaerotica</span>
                 <img src="https://i.ibb.co/XrYGdthZ/icona.png" alt="Viticoltura Erotica" class="w-5 h-5 object-contain rounded-full border border-black bg-white">
             </a>
@@ -73,29 +70,29 @@
     <section class="mb-8 space-y-4">
         <div class="grid grid-cols-4 sm:flex sm:flex-wrap items-center justify-center gap-2 py-1">
             <button onclick="filterType('Tutti', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-black text-white text-[11px] font-bold uppercase tracking-wider ink-border-sm cursor-pointer">Tutti</button>
-            <button onclick="filterType('rosso', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Rossi</button>
-            <button onclick="filterType('bianco', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Bianchi</button>
-            <button onclick="filterType('arancione', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Arancione</button>
-            <button onclick="filterType('rosa', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Rosa</button>
-            <button onclick="filterType('franciacorta', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Franciacorta</button>
-            <button onclick="filterType('altre bolle', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Altre Bolle</button>
-            <button onclick="filterType('champagne', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Champagne</button>
+            <button onclick="filterType('rosso', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Rossi</button>
+            <button onclick="filterType('bianco', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Bianchi</button>
+            <button onclick="filterType('arancione', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Arancione</button>
+            <button onclick="filterType('rosa', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Rosa</button>
+            <button onclick="filterType('franciacorta', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Franciacorta</button>
+            <button onclick="filterType('altre bolle', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Altre Bolle</button>
+            <button onclick="filterType('champagne', this)" class="cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer">Champagne</button>
         </div>
 
         <div class="relative pt-1">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pt-1 pointer-events-none text-black text-sm z-10">🔍</span>
-            <input type="text" id="search-input" oninput="handleSearch()" placeholder="Cerca per vino, cantina, vitigno, zona..." class="w-full pl-10 pr-4 py-2.5 bg-[#d1d5db] border-2 border-black text-xs font-semibold text-black placeholder-stone-600 focus:outline-none focus:bg-white transition shadow-[3px_3px_0px_#111]">
+            <input type="text" id="search-input" oninput="handleSearch()" placeholder="Cerca per vino, cantina, vitigno, zona..." class="w-full pl-10 pr-4 py-2.5 bg-white border-2 border-black text-xs font-semibold text-black placeholder-stone-500 focus:outline-none focus:bg-stone-50 transition shadow-[3px_3px_0px_#111]">
         </div>
 
         <div class="flex flex-col sm:flex-row gap-3 pt-1 border-t-2 border-emerald-900/30">
             <div class="flex gap-2 flex-1">
-                <button onclick="filterPrice('ECONOMY')" id="btn-economy" class="price-btn flex-1 py-2.5 bg-[#d1d5db] text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer">
+                <button onclick="filterPrice('ECONOMY')" id="btn-economy" class="price-btn flex-1 py-2.5 bg-white text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer">
                     💰 ECONOMY <span class="block text-[10px] font-semibold tracking-normal text-stone-700">Fino a 30€</span>
                 </button>
-                <button onclick="filterPrice('BUSINESS')" id="btn-business" class="price-btn flex-1 py-2.5 bg-[#d1d5db] text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer">
+                <button onclick="filterPrice('BUSINESS')" id="btn-business" class="price-btn flex-1 py-2.5 bg-white text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer">
                     💼 BUSINESS <span class="block text-[10px] font-semibold tracking-normal text-stone-700">31€ - 50€</span>
                 </button>
-                <button onclick="filterPrice('POWER')" id="btn-power" class="price-btn flex-1 py-2.5 bg-[#d1d5db] text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer">
+                <button onclick="filterPrice('POWER')" id="btn-power" class="price-btn flex-1 py-2.5 bg-white text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer">
                     ⚡ POWER <span class="block text-[10px] font-semibold tracking-normal text-stone-700">Sopra 50€</span>
                 </button>
             </div>
@@ -231,7 +228,6 @@
             currentView = view;
             const tabCarta = document.getElementById('tab-carta');
             const tabMescita = document.getElementById('tab-mescita');
-            const mainSubtitle = document.getElementById('main-subtitle');
 
             const activeTabClass = "px-5 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer bg-black text-white";
             const inactiveTabClass = "px-5 py-2 text-xs font-bold uppercase tracking-wider transition cursor-pointer text-black hover:bg-black/10";
@@ -239,11 +235,9 @@
             if (view === 'carta') {
                 tabCarta.className = activeTabClass;
                 tabMescita.className = inactiveTabClass;
-                mainSubtitle.innerText = "La carta dei vini";
             } else {
                 tabMescita.className = activeTabClass;
                 tabCarta.className = inactiveTabClass;
-                mainSubtitle.innerText = "Oggi in mescita al calice";
             }
             renderWines();
         }
@@ -256,7 +250,7 @@
 
         function updateButtonStyles(activeType, element) {
             document.querySelectorAll('.cat-btn').forEach(btn => {
-                btn.className = "cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-[#d1d5db] text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer";
+                btn.className = "cat-btn col-span-2 sm:col-span-auto px-3 py-2 bg-white text-black hover:bg-black hover:text-white text-[11px] font-bold uppercase tracking-wider transition ink-border-sm cursor-pointer";
             });
 
             if (element) {
@@ -269,7 +263,7 @@
             const btnBusiness = document.getElementById('btn-business');
             const btnPower = document.getElementById('btn-power');
 
-            const defaultClass = "price-btn flex-1 py-2.5 bg-[#d1d5db] text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer";
+            const defaultClass = "price-btn flex-1 py-2.5 bg-white text-black border-2 border-black text-xs font-bold tracking-widest transition active:scale-95 shadow-[2px_2px_0px_#111] cursor-pointer";
             btnEconomy.className = defaultClass;
             btnBusiness.className = defaultClass;
             btnPower.className = defaultClass;
